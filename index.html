@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hangman</title>
+</head>
+<body>
+  <div id="home">
+    <div class="title">Hangman</div>
+    <div class="playbutton" onclick="startGame">Play</div>
+  </div>
+  
+  <div id="result" class="h">
+    <div class="title" id="rT"></div>
+    <div class="body" id="rB"></div>
+    <div class="rbutton" onclick="startGame()" >Try Again?</div>
+  </div>
+  
+  <div id="pGame">
+    <div id="letter"></div>
+    <div id="game">
+      <div class="player">
+        <div class="playerModel">
+          <div class="head" data-="false" id="e4"></div>
+          <div class="body" data-="false" l="false" r="false" id="e5"></div>
+          <div class="foot" data-="false" l="false" r="false" id="e6"></div>
+        </div>
+        <div class="stand3" data-="false" id="e3"></div>
+        <div class="stand2" data-="false" id="e2"></div>
+        <div class="stand" data-="false" id="e1"></div>
+        <div class="ground" data-="false" id="e0"></div>
+        <div class="hintButton" data-="false" id="hintButton" onclick="hint()">?</div>
+      </div>
+    </div>
+    <div id="akeyboard">
+      <div id="moveKeyboard"><div id="marg"></div></div>
+      <div id="keyboard"></div>
+    </div>
+    <div class="hint" id="hint">
+      <div class="title">Hint<div class="exit" onclick="hintExit()">X</div>
+    </div>
+    <div class="body" id="hintText"></div>
+  </div>
+  </div>
+</body>
+</html>
