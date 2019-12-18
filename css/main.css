@@ -1,0 +1,370 @@
+body {
+  background-color: darkseagreen;
+  margin: 0%;
+}
+
+#home {
+  background: linear-gradient(#665599 #76db4e);
+  background: -webkit-linear-gradient(top,#665599, #76db4e);
+  background: -moz-linear-gradient(top,#665599, #76db4e);
+  background: -o-repeating-linear-gradient(top,#665599, #76db4e);
+  bottom: 0%;
+  left: 0%;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+#home.title {
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 15%;
+}
+
+#home.oceancategory {
+  border-radius: 3px;
+  box-shadow: gainsboro 5px;
+  padding: 10px;
+  font-weight: bold;
+  margin: 20% auto;
+}
+
+#home.foodcategory{
+  border-radius: 3px;
+  box-shadow: gainsboro 5px;
+  padding: 10px;
+  font-weight: bold;
+  margin: 20% auto;
+}
+
+#home.mis-category{
+  border-radius: 3px;
+  box-shadow: gainsboro 5px;
+  padding: 10px;
+  font-weight: bold;
+  margin: 20% auto;
+}
+
+#home.sci-category{
+  border-radius: 3px;
+  box-shadow: gainsboro 5px;
+  padding: 10px;
+  font-weight: bold;
+  margin: 20% auto;
+}
+
+#home.ctry-category{
+  border-radius: 3px;
+  box-shadow: gainsboro 5px;
+  padding: 10px;
+  font-weight: bold;
+  margin: 20% auto;
+}
+
+#home.footer{
+  font-style: italic;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 12px;
+}
+
+.h {
+  display: none;
+}
+
+#result {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #91dd6e ;
+}
+
+#result.title{
+  color: floralwhite;
+  font-size: 48px;
+  margin-top: 15%;
+  text-align: center;
+  text-shadow: lightslategray 1px 1px;
+}
+
+#result.body{
+  color: darkgoldenrod ;
+  margin-top: 0;
+  text-align: center;
+  text-shadow: lightslategray 1px 1px;
+
+}
+
+#result.rbutton{
+  background: papayawhip ;
+  display: table;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-bottom: 0;
+  border-radius: 2px;
+}
+
+#letter {
+  font-size: 22px;
+  height: 30px;
+  margin: 20px;
+  text-align: center;
+}
+
+#game {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 220px;
+}
+
+#game.player {
+  left: 53px;
+  position: absolute;
+  top: 90px;
+  height: 130px;
+  width: 75px;
+}
+
+.player.playerModel {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.playerModel.head {
+  border-radius: 50%;
+  box-shadow: #000000 2px inset;
+  height: 35px;
+  margin: auto;
+  width: 35px;
+}
+
+.playerModel.head[data-="false"]{
+  display: none;
+}
+
+.playerModel.body {
+  background-color: #000000;
+  height: 45px;
+  margin: auto;
+  width: 2px;
+}
+
+.playerModel.body[data-="false"] {
+  display: none;
+}
+
+.playerModel.body ::before, .playerModel.body ::after {
+  background-color:#000000;
+  content: "";
+  display: inline-block;
+  height: 30px;
+  position: absolute;
+  width: 2px;
+}
+
+.playerModel.body[l="false"]::before, .playerModel.body[r="false"]::after {
+  display: none;
+}
+
+.playerModel.body::before {
+  left: 27px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.playerModel.body::after {
+  right: 26px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.playerModel.foot{
+  background-color: #000000;
+  height: 3px;
+  margin: auto;
+  width: 2px;
+}
+
+.playerModel.foot[data-="false"]{
+  display: none;
+}
+
+.playerModel.foot::before, .playerModel.foot::after {
+  background-color: #000000;
+  content: "";
+  display: inline-block;
+  height: 40px;
+  position: absolute;
+  width: 2px;
+}
+
+.playerModel.foot[l="false"]::before, .playerModel.foot[r="false"]::after {
+  display: none;
+}
+
+.playerModel.foot::before{
+  left: 30px;
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+}
+
+.playerModel.foot::after{
+  right: 29px;
+  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+}
+
+#game.stand3 {
+  background-color: #000000;
+  height: 20px;
+  left: 90px;
+  position: absolute;
+  top: 70px;
+  width: 2px;
+}
+
+#game.stand3[data-="false"] {
+  display: none;
+}
+
+#game.stand2 {
+  background-color: #000000;
+  border-radius: 5px 0 0 5px;
+  bottom: 180px;
+  height: 5px;
+  position: absolute;
+  right: 45px;
+  width: 95px;
+}
+
+#game.stand2::before {
+  background-color: #000000;
+  content: "";
+  left: 50px;
+  height: 5px;
+  position: absolute;
+  top: 17px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 50px;
+}
+
+#game.stand2[data-=false] {
+  display: none;
+}
+
+#game.stand {
+  background-color: #000000;
+  bottom: 0;
+  height: 180px;
+  margin: auto;
+  position: absolute;
+  right: 45px;
+  width: 5px;
+}
+
+#game.stand[data-="false"] {
+  display: none;
+}
+
+#game.ground {
+  background-color: #000000;
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 220px;
+}
+
+#game.hintButton {
+  background-color: #000000;
+  background: linear-gradient(transparent, rgba(0,0,0,0.1));
+  background: -webkit-linear-gradient(top,transparent, rgba(0,0,0,0.1));
+  background: -moz-linear-gradient(top, transparent, rgba(0,0,0,0.1));
+  border-radius: 8%;
+  box-shadow: steelblue 1px 1px 1px;
+  font-weight: bold;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+
+}
+
+#game.hintButton[data-="false"] {
+  display: none;
+}
+
+#akeyboard {
+  background-color: rgba(red, green, blue, alpha);
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 500px;
+  padding: 0 15px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+#moveKeyboard {
+  padding: 15px;
+}
+
+.marg {
+  border-bottom: solid 2px #cccccc;
+
+}
+
+#hint {
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px #888888;
+  display: none;
+  left: 0;
+  margin: auto;
+  margin-top: 75px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 250px;
+}
+
+#hint.title {
+  background: #ffffff;
+  background: linear-gradient(#fff, #bbb);
+  background: -webkit-linear-gradient(top, #fff, #bbb);
+  background: -moz-linear-gradient(top, #fff, #bbb);
+  background: -o-linear-gradient(top, #fff,#bbb);
+  border-bottom: solid 1px #555;
+  border-radius: 2px 2px 0 0;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: relative;
+}
+
+#hint.title.exit {
+  background-color: #f55;
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px #888;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+}
+
+#hint.body {
+  background-color: #ddd;
+  border-radius: 0 0 2px 2px;
+  padding: 10px;
+}
