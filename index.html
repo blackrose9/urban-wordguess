@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
   <title>Hangman</title>
 </head>
 <body>
@@ -29,19 +30,19 @@
     <div id="game">
       <div class="player">
         <div class="playerModel">
-          <div class="head" data-="false" id="e4"></div>
-          <div class="body" data-="false" l="false" r="false" id="e5"></div>
-          <div class="foot" data-="false" l="false" r="false" id="e6"></div>
+          <div class="head" data-="false" id="fail4"></div>
+          <div class="body" data-="false" l="false" r="false" id="fail5"></div>
+          <div class="foot" data-="false" l="false" r="false" id="fail6"></div>
         </div>
-        <div class="stand3" data-="false" id="e3"></div>
-        <div class="stand2" data-="false" id="e2"></div>
-        <div class="stand" data-="false" id="e1"></div>
-        <div class="ground" data-="false" id="e0"></div>
+        <div class="stand3" data-="false" id="fail3"></div>
+        <div class="stand2" data-="false" id="fail2"></div>
+        <div class="stand" data-="false" id="fail1"></div>
+        <div class="ground" data-="false" id="fail0"></div>
         <div class="hintButton" data-="false" id="hintButton" onclick="hint()">?</div>
       </div>
     </div>
     <div id="akeyboard">
-      <div id="moveKeyboard"><div id="marg"></div></div>
+      <div id="moveKeyboard"><div class="marg"></div></div>
       <div id="keyboard"></div>
     </div>
     <div class="hint" id="hint">
