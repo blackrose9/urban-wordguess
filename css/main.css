@@ -39,7 +39,7 @@ body {
   margin: 20% auto;
 }
 
-#home.mis-category{
+#home.misccategory{
   border-radius: 3px;
   box-shadow: gainsboro 5px;
   padding: 10px;
@@ -47,7 +47,7 @@ body {
   margin: 20% auto;
 }
 
-#home.sci-category{
+#home.sciencecategory{
   border-radius: 3px;
   box-shadow: gainsboro 5px;
   padding: 10px;
@@ -55,7 +55,7 @@ body {
   margin: 20% auto;
 }
 
-#home.ctry-category{
+#home.countrycategory{
   border-radius: 3px;
   box-shadow: gainsboro 5px;
   padding: 10px;
@@ -367,4 +367,19 @@ body {
   background-color: #ddd;
   border-radius: 0 0 2px 2px;
   padding: 10px;
+}
+
+/* styling for the dashes */
+.line {
+   box-shadow: 0 3px 0 -1px #555;
+   display: inline-block;
+   margin: 1px;
+   height: 20px;
+   text-transform: uppercase;
+   width: 20px;
+}
+
+.ls {
+   box-shadow: 0 0 0 0 #555;
+   width: 10px;
 }
