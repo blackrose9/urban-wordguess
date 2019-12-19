@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <title>Hangman</title>
+</head>
+<body>
+  <div id="home">
+    <div class="title">Hangman</div>
+    <a name="categories"></a>
+        <button class="oceancategory" onclick="startGame()">Ocean</button>
+        <button class="foodcategory" onclick="startGame()">Food</button>
+        <button class="mis-category" onclick="startGame()">Miscellaneous</button>
+        <button class="sci-category" onclick="startGame()">Science</button>
+        <button class="ctry-category" onclick="startGame()">Counrty</button>
+    <div class="footer">By The Donuts.</div>
+  </div>
+  
+  <div id="result" class="h">
+    <div class="title" id="rT"></div>
+    <div class="body" id="rB"></div>
+    <a class="rbutton" href="#categories" >Try Again?</a>
+  </div>
+  
+  <div id="pGame">
+    <div id="letter"></div>
+    <div id="game">
+      <div class="player">
+        <div class="playerModel">
+          <div class="head" data-="false" id="fail4"></div>
+          <div class="body" data-="false" l="false" r="false" id="fail5"></div>
+          <div class="foot" data-="false" l="false" r="false" id="fail6"></div>
+        </div>
+        <div class="stand3" data-="false" id="fail3"></div>
+        <div class="stand2" data-="false" id="fail2"></div>
+        <div class="stand" data-="false" id="fail1"></div>
+        <div class="ground" data-="false" id="fail0"></div>
+        <div class="hintButton" data-="false" id="hintButton" onclick="hint()">?</div>
+      </div>
+    </div>
+    <div id="akeyboard">
+      <div id="moveKeyboard"><div class="marg"></div></div>
+      <div id="keyboard"></div>
+    </div>
+    <div class="hint" id="hint">
+      <div class="title">Hint<div class="exit" onclick="hintExit()">X</div>
+    </div>
+    <div class="body" id="hintText"></div>
+  </div>
+  </div>
+</body>
+</html>
