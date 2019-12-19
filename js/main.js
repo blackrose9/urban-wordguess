@@ -1,9 +1,9 @@
 // words in categories
-var categoryOcean = [["Starfish"], ["Seahorse"], ["Water"], ["swordfish"], ["beach"]]
-var categoryScience = [["newton"]]
-var categoryFood = [["Kiwi"], ["Donut"], ["Fish"]]
-var categoryCountries = [["Somalia"]]
-var categoryMisc = [["Hosepipe"], ["Principle"]]
+var categoryOcean = [["Starfish"], ["Seahorse"], ["Water"], ["Swordfish"], ["Beach"]]
+var categoryScience = [["Newton"],["Astronomy"], ["Peristalisis"], ["Valency"], ["Supernova"]]
+var categoryFood = [["Kiwi"], ["Donut"], ["Fish"], ["Jackfruit"], ["Wafers"]]
+var categoryCountries = [["Somalia"],["Jamaica"], ["Russia"], ["South Africa"], ["France"]]
+var categoryMisc = [["Hosepipe"], ["Principle"], ["Mandarin"], ["Chores"], ["Xylophone"]]
 
 //hints for the categories
 var hintsOcean = [["It should in the sky but it's in the sea"], ["It's land counterpart is great at races"], ["Mizuuuu"], ["Sharp, Sharp, pointy!"], ["Full of Sandiness"]]
